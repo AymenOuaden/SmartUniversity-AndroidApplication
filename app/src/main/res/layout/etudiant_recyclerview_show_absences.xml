@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/backround_greyblue_light"
+        android:gravity="center"
+        android:stretchColumns="0,1,2,3,4,5"
+        tools:ignore="UselessParent">
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UnusedAttribute">
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/backround_greyblue_light"
+                android:gravity="center"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/code_module"
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/backround_greyblue_light"
+                android:gravity="center"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/backround_greyblue_light"
+                android:gravity="center"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/backround_greyblue_light"
+
+                android:gravity="center"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/etat"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_column="4"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/backround_greyblue_light"
+                android:gravity="center"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lay"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_column="5"
+                android:background="@drawable/backround_greyblue_light"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/option_justifier"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/ic_add_coloraccent"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    android:contentDescription="@string/image_larg" />
+
+                <ImageView
+                    android:id="@+id/show_justification"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/icon_list_green"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    android:contentDescription="@string/image_larg" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

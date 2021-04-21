@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+
+
+    <style name="tolbartheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:width">@dimen/_30sdp</item>
+
+
+    </style>
+
+    <style name="tolbarpopotheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:width">@dimen/_30sdp</item>
+
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="titleSize" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">@dimen/_14sdp
+        </item><!-- box_full_greengrey size in icon_menu-->
+        <item name="android:textColor">@color/white
+        </item><!-- box_full_greengrey size in icon_menu-->
+        <item name="android:width">@dimen/_35sdp</item>
+    </style>
+
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">@dimen/_12sdp
+        </item><!-- box_full_greengrey size in icon_menu-->
+        <!-- item size in icon_menu-->
+        <item name="android:icon">@drawable/icon_menu</item>
+        <item name="android:listPreferredItemHeightSmall">@dimen/_35sdp</item>
+        <item name="listPreferredItemHeightSmall">@dimen/_35sdp</item>
+        <!-- item padding left in icon_menu-->
+        <item name="android:listPreferredItemPaddingLeft">@dimen/_6sdp</item>
+        <item name="listPreferredItemPaddingLeft">@dimen/_6sdp</item>
+        <!-- item padding right in icon_menu-->
+        <item name="android:listPreferredItemPaddingRight">@dimen/_6sdp</item>
+        <item name="listPreferredItemPaddingRight">@dimen/_6sdp</item>
+        <!-- icon -->
+    </style>
+
+    <dimen name="design_navigation_icon_size" tools:override="true">@dimen/_20sdp</dimen>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@android:color/transparent</item>
+    </style>
+
+</resources>

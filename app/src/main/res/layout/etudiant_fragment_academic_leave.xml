@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/glob"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/box_empty_black"
+    android:orientation="vertical">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/message_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/message_top">
+
+
+        <RelativeLayout
+            android:id="@+id/glob1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
+
+                <!-- afficher conge -->
+
+                <RelativeLayout
+                    android:id="@+id/demande_existe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="@dimen/_12sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_13sdp"
+                        android:visibility="gone" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/message"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:visibility="visible"
+                        app:cardCornerRadius="@dimen/_12sdp">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/top_table"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:ignore="UselessParent">
+
+                                <TableLayout
+                                    android:id="@+id/table"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/button_empty_black_round"
+                                    android:gravity="center"
+                                    android:stretchColumns="0,1">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/black"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_6sdp"
+                                        android:text="@string/informations_conge"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_14sdp"
+                                        android:textStyle="bold"
+                                        tools:ignore="TooDeepLayout" />
+
+                                    <TableRow
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/box_full_blue_light"
+                                        android:padding="@dimen/_3sdp">
+
+                                        <TextView
+                                            android:layout_width="20dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_column="0"
+                                            android:gravity="center"
+                                            android:text="@string/etudiant"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textStyle="bold"
+                                            tools:ignore="TooDeepLayout" />
+
+                                        <TextView
+                                            android:layout_width="20dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_column="1"
+                                            android:gravity="center"
+                                            android:text="@string/date_de_naissance"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textStyle="bold" />
+
+
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/backround_greyblue_light"
+                                        android:padding="@dimen/_3sdp"
+                                        android:visibility="visible">
+
+                                        <TextView
+                                            android:id="@+id/etudiant"
+                                            android:layout_width="20dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_column="0"
+                                            android:gravity="center"
+                                            android:textSize="@dimen/_12sdp" />
+
+                                        <TextView
+                                            android:id="@+id/date_naissance"
+                                            android:layout_width="20dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_column="1"
+                                            android:gravity="center"
+                                            android:textSize="@dimen/_12sdp" />
+                                    </TableRow>
+                                </TableLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cardview"
+                        android:background="@drawable/box_empty_black"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_1sdp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_6sdp">
+
+                            <TextView
+                                android:id="@+id/d"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_6sdp"
+                                android:layout_marginLeft="@dimen/_6sdp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:text="@string/date_conge"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/date_conge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_6sdp"
+                                android:layout_marginLeft="@dimen/_6sdp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_14sdp"
+                                app:layout_constraintStart_toEndOf="@+id/d"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/e"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_6sdp"
+                                android:layout_marginLeft="@dimen/_6sdp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:text="@string/etat"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/d" />
+
+                            <TextView
+                                android:id="@+id/etat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_6sdp"
+                                android:layout_marginLeft="@dimen/_6sdp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_14sdp"
+                                app:layout_constraintStart_toEndOf="@+id/e"
+                                app:layout_constraintTop_toBottomOf="@+id/date_conge" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_200sdp"
+                            android:layout_below="@id/top"
+                            android:contentDescription="@string/image_larg" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/options_plus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/image"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:visibility="visible"
+                            tools:ignore="NotSibling">
+
+                            <ImageView
+                                android:id="@+id/download"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:contentDescription="@string/image_larg"
+                                android:src="@drawable/icon_download_coloraccent"
+                                app:layout_constraintEnd_toStartOf="parent"
+                                app:layout_constraintStart_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/supprimer"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:contentDescription="@string/image_larg"
+                                android:src="@drawable/icon_delete_red"
+                                app:layout_constraintStart_toEndOf="@+id/download"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/zoom"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:contentDescription="@string/image_larg"
+                                android:src="@drawable/ic_zoom_in"
+                                app:layout_constraintEnd_toStartOf="@+id/download"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="NotSibling" />
+
+                            <ImageView
+                                android:id="@+id/zoomOUT"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:contentDescription="@string/image_larg"
+                                android:src="@drawable/ic_zoom_out"
+                                android:visibility="gone"
+                                app:layout_constraintEnd_toStartOf="@+id/download"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="NotSibling" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <!-- upload conge -->
+
+                <RelativeLayout
+                    android:id="@+id/demander_conge"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_400sdp"
+                    android:layout_below="@id/demande_existe"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:id="@+id/top1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@color/light_back"
+                            android:gravity="center"
+                            android:padding="@dimen/_8sdp"
+                            android:text="@string/upload_title"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/message_error"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:background="@color/red_light"
+                            android:drawableBottom="@drawable/icon_error_red"
+                            android:padding="@dimen/_8sdp"
+                            android:textAlignment="center"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/_16sdp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/avant_upload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/top1"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/button_choose_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/button_empty_color_accent_round"
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:paddingRight="@dimen/_20sdp"
+                            android:text="@string/select"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+
+                        <ImageView
+                            android:id="@+id/imageview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@id/progress_circular"
+                            android:layout_below="@id/button_choose_image"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:background="@drawable/box_empty_black"
+                            android:contentDescription="@string/select"
+                            android:visibility="gone" />
+
+                        <ProgressBar
+                            android:id="@+id/progress_circular"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_above="@id/progress_bar"
+                            android:layout_centerHorizontal="true"
+                            android:visibility="gone" />
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_8sdp"
+                            android:layout_above="@id/tView"
+                            android:indeterminate="false"
+                            android:max="100"
+                            android:progress="0"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tView"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_above="@id/help_affichage"
+                            android:layout_alignStart="@+id/progress_bar"
+                            android:layout_alignLeft="@+id/progress_bar"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:text="@string/_0_100"
+                            android:textSize="@dimen/_14sdp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/button_upload"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/button_empty_black_round"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:paddingRight="@dimen/_8sdp"
+                            android:text="@string/upload_image"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/uploading"
+                            android:layout_width="@dimen/_140sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/black"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:paddingRight="@dimen/_8sdp"
+                            android:text="@string/uploading"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/help_affichage"
+                            android:layout_width="1dp"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/apres_upload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/_30sdp"
+                        android:visibility="gone">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/options_plus1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_above="@id/progress_bar"
+                            android:layout_below="@id/options"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:visibility="gone"
+                            tools:ignore="NotSibling">
+
+                            <Button
+                                android:id="@+id/show_justification"
+                                android:layout_width="@dimen/_90sdp"
+                                android:layout_height="@dimen/_60sdp"
+                                android:layout_marginEnd="@dimen/_2sdp"
+                                android:layout_marginRight="@dimen/_2sdp"
+                                android:background="@drawable/button_empty_color_accent_round"
+                                android:text="@string/show_justification"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_12sdp"
+                                app:layout_constraintEnd_toStartOf="@+id/hlp"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <Button
+                                android:id="@+id/releve"
+                                android:layout_width="@dimen/_90sdp"
+                                android:layout_height="@dimen/_60sdp"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:background="@drawable/button_empty_color_accent_round"
+                                android:text="@string/gerer_relve"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_12sdp"
+                                app:layout_constraintStart_toEndOf="@+id/hlp"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <Button
+                                android:id="@+id/hlp"
+                                android:layout_width="100dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/button_empty_color_accent_round"
+                                android:padding="5dp"
+                                android:text="@string/releve"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:visibility="gone"
+                                app:layout_constraintEnd_toStartOf="parent"
+                                app:layout_constraintStart_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:ignore="MissingConstraints" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

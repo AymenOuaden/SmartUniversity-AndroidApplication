@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backround_greyblue_light"
+        android:gravity="center"
+        android:stretchColumns="0,1,2,3,4"
+        tools:ignore="UselessParent">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="10dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_column="0"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/nom"
+                android:layout_width="25dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_column="1"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/prenom"
+                android:layout_width="25dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_column="2"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/nombre_absences_justifié"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/nombre_absences_non_justifié"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_column="4"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_12sdp" />
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

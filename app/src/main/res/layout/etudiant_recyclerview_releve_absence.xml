@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableLayout
+
+        android:id="@+id/table"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/backround_greyblue_light"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:stretchColumns="0,1,2,3,4,5"
+        tools:ignore="UnusedAttribute,UselessParent">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_40sdp"
+            tools:ignore="UselessParent">
+
+
+            <TextView
+                android:id="@+id/code_module"
+                android:layout_width="20dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_column="0"
+
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="10dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_column="1"
+                android:gravity="center"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/jour"
+                android:layout_width="20dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_column="2"
+                android:gravity="center"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/heure"
+                android:layout_width="10dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_column="3"
+                android:gravity="center"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/nbr_absence"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_column="4"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_13sdp" />
+
+            <ImageView
+                android:id="@+id/display"
+                android:layout_width="15dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_column="5"
+                android:layout_gravity="center"
+                android:contentDescription="@string/image_larg"
+                android:src="@drawable/icon_display_coloraccent"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_13sdp" />
+
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

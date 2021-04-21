@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="Faculté_ntic">كلية NTIC</string>
+
+    <!-- main.xml __ connexion -->
+    <string name="base_url">"192.168.1.5/SmartUniversity-API/api/"</string>
+    <string name="app_name">NTIC</string>
+    <string name="error">خطأ</string>
+    <string name="user">اسم المستخدم</string>
+    <string name="pass">كلمة السر</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="cnct">البقاء متصلا</string>
+    <string name="fp">نسيت كلمة السر ؟</string>
+    <string name="cntct">اتصل بنا</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="copyright1">وادن أيمن - جباس زكرياء</string>
+
+    <!--  login.xml __ erreur-->
+    <string name="error_lenght">كلمة السر يجب أن تتكون من 6 حروف على الأقل</string>
+    <string name="error_user_pass">خطأ في اسم المستخدم أو كلمة السر </string>
+    <string name="not_empty">يجب ألا يكون اسم المستخدم وكلمة المرور فارغين</string>
+    <string name="network">تحقق من الاتصال وحاول مرة أخرى</string>
+    <string name="not_enseignant">لست طالب أو أستاذ</string>
+
+
+    <!-- forgot_Password.xml-->
+    <string name="email_exemple"> exempl@gmail.com</string>
+    <string name="title_password">أدخل بريدك الإلكتروني لإعادة تعيين كلمة السر</string>
+    <string name="reset_password">إعادة تعيين كلمة السر  </string>
+    <string name="new_password"> كلمة سر جديدة </string>
+    <string name="conf_password">تأكيد كلمة السر </string>
+    <string name="check_code"> التحقق من الكود </string>
+    <string name="enter_code"> لقد أرسلنا للتو رمزًا مكونًا من ستة أحرف إلى عنوان بريدك الإلكتروني. أدخل هذا الرمز لإعادة تعيين كلمة المرور الخاصة بك</string>
+    <string name="message_mail">\n مرحبًا ، \n \n لقد طلبت مؤخرًا إعادة تعيين كلمة المرور لحسابك. لإكمال العملية ،
+        انسخ الكود أدناه (ستة أحرف) وضعه في التطبيق الخاص بك. إذا لم تقم بإجراء هذا التغيير ، فتجاهل البريد الإلكتروني.</string>
+    <string name="ntic_admin"> Smart University - NTIC </string>
+    <string name="password_subject"> طلب تغير كلمة السر - NTIC </string>
+    <string name="wrong_code"> رمز غير صحيح ، حاول مرة أخرى! </string>
+
+    <string name="wrong_password">كلمة المرور وتأكيد كلمة المرور غير متطابقين</string>
+
+    <string name="wrong_email"> بريد إلكتروني خاطئ!</string>
+    <string name="update_password_succ"> لقد تم تحديث كلمة السر الخاصة بك بنجاح</string>
+    <string name="enter_new_pass"> أدخل كلمة مرور جديدة</string>
+
+    <!-- fragment_espace_enseignant.xml__options-->
+    <string name="edit">تعديل الملف الشخصي</string>
+    <string name="delete">حذف الحساب</string>
+    <string name="param">إدارة سجل الغيابات</string>
+    <string name="presence">تسجيل الحضور</string>
+
+    <string name="consulter_seance">قائمة الحصص</string>
+    <string name="change_seance">تغيير الحصة</string>
+    <string name="ajouter_seance">اضافة حصة</string>
+    <string name="ajouter_seance_s">اضافة حصة</string>
+
+
+    <!-- fragment_espace_enseignant.xml__messages-->
+    <string name="marquer_presence_ok">تم تسجيل الطلاب الغائبين بنجاح.</string>
+    <string name="marquer_presence_not_ok">خطأ ، لم يتم تسجيل الطلاب الغائبين ، حاول لاحقًا.</string>
+
+
+    <!-- fragment_delete account.xml-->
+    <string name="con_delete">هل أنت متأكد أنك تريد حذف حسابك!</string>
+    <string name="entrer_password">  أدخل كلمة المرور الخاصة بك للمتابعة</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="del">حذف الحساب</string>
+    <string name="ps">خطأ في كلمة السر </string>
+    <string name="account_deleted"> أدخل كلمة المرور الخاصة بك للمتابعة </string>
+    <string name="delete_succ"> تم حذف حسابك بنجاح</string>
+
+
+    <!-- fragment_update account.xml-->
+    <string name="update_title">تحديث ملفك الشخصي</string>
+    <string name="update_title1">معلومات تسجيل الدخول</string>
+    <string name="update_title2">المعلومات الشخصية </string>
+    <string name="nom"> اللقب </string>
+    <string name="prenom"> الاسم </string>
+    <string name="date"> تاريخ الميلاد </string>
+    <string name="email"> البريد الالكتروني </string>
+    <string name="adr"> العنوان </string>
+    <string name="telephone"> الهاتف </string>
+    <string name="grade"> الرتبة </string>
+    <string name="type"> النوع </string>
+    <string name="departement"> القسم </string>
+    <string name="autres"> أخرى </string>
+    <string name="no_chng"> لا يمكنك تغيير هده المعلومات</string>
+    <string name="save_changes">احفظ التغييرات</string>
+    <string name="modifier_ok">تم تحديث ملفك الشخصي بنجاح</string>
+    <string name="modifier_not_ok">لا يمكننا تحديث ملف التعريف الحساب الخاص بك ، يرجى المحاولة مرة أخرى في وقت لاحق</string>
+    <string name="phone_erreur">يجب أن يحتوي رقم الهاتف على 10 أرقام</string>
+    <string name="no_change_erreur">يجب عليك تغيير بيانات واحدة على الأقل</string>
+
+
+    <!-- liste des séances-->
+    <string name="nom_module"> اسم الوحدة</string>
+    <string name="jour"> اليوم </string>
+    <string name="new_jour"> اليوم الجديد </string>
+    <string name="heure"> الساعة </string>
+    <string name="new_heure">الساعة الجديدة </string>
+    <string name="type_seance"> النوع </string>
+    <string name="groupe"> المجموعة </string>
+    <string name="annee"> السنة </string>
+    <string name="specialite"> التخصص </string>
+    <string name="marquer_presence"> تسجيل الحضور</string>
+    <string name="num"> رقم الحصة </string>
+
+
+    <!-- fragment_delete account.xml-->
+    <string name="gerer_relve">إدارة سجل الغياب</string>
+    <string name="consulter_etudiants_exclus">عرض قائمة الطلبة المقصيين  </string>
+    <string name="consulter_statistiques">عرض الإحصائيات</string>
+    <string name="title_activity_tst">tst</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_espace_enseignant">فضاء الطالب</string>
+    <string name="menu_marquer_presence">Gallery</string>
+    <string name="menu_gerer_absence">Slideshow</string>
+    <string name="menu_ajouter_seance">Tools</string>
+    <string name="menu_changer_seance">Share</string>
+    <string name="menu_modifier_profile">Account Settings</string>
+    <string name="menu_supprimer_profile">Send</string>
+
+    <!-- fragment_delete account.xml-->
+    <string name="statistiques">عرض الإحصائيات</string>
+    <string name="releve">إدارة سجل الغياب</string>
+    <string name="exclus">عرض الطلبة المقصيين</string>
+    <string name="afficher_seances">اختر حصة اخرى</string>
+
+    <string name="statistiques_title">عرض الإحصائيات</string>
+    <string name="releve_title"> تقرير غياب الطلبة</string>
+
+    <string name="toolbar_exclus">الطلاب المقصين </string>
+    <string name="exclus_title"> قائمة الطلاب المقصيين</string>
+    <string name="non_etudiant_exclus">لم يتم استبعاد أي طالب لهذه المجموعة</string>
+
+    <string name="toolbar_releve_absence">قائمة الغيابات</string>
+    <string name="releve_absence_title">تقرير الغياب</string>
+    <string name="number">رقم</string>
+
+    <!-- fragment_marquer présence.xml-->
+    <string name="message_select">اختر التاريخ و الطلاب الغائبون</string>
+    <string name="save">حفظ</string>
+    <string name="message_error_date">لا يمكن أن يكون التاريخ فارغًا ، يرجى تحديد التاريخ.</string>
+    <string name="message_error_empty_liste">لا يمكن أن تكون قائمة الطلاب الغائبين فارغة ، حدد طالبًا واحدًا على الأقل.</string>
+    <string name="message_error_no_student_found">لا يوجد طالب يتوافق مع هذه الجلسة.</string>
+    <string name="import_absence_list">استيراد قائمة الغيابات.</string>
+
+
+    <!-- fragment_gérer_absence(manage absences).xml-->
+
+
+    <string name="dimanche">الاحد</string>
+    <string name="lundi">الاثنين</string>
+    <string name="mardi">الثلاثاء</string>
+    <string name="mercredi">الأربعاء</string>
+    <string name="jeudi">الخميس</string>
+
+    <string name="empty_seance_supp">لم يتم العثور على حصة إضافية</string>
+    <string name="current_information">المعلومات الحالية لهذه الحصة</string>
+    <string name="waiting_information">لديك بالفعل طلب تغيير لهذا الفصل</string>
+    <string name="new_information">طلب تغيير لهذه الحصة</string>
+    <string name="erreur_jour_heure"> أنت أو مجموعتك لديكم حصة بالفعل في هذا التاريخ ، يجب عليك تغيير يوم أو ساعة واحدة على الأقل</string>
+    <string name="supprimer">حذف</string>
+    <string name="changer">تغيير</string>
+
+    <string name="espace_enseignant">فضاء الأستاد</string>
+    <string name="title_consulter_marquer">لتسجيل الحضور , اختر حصة</string>
+    <string name="title_consulter_ajouter">لاضافة حصة , اختر حصة</string>
+    <string name="title_consulter_changer">لطلب تغير وقت, اختر حصة</string>
+    <string name="title_consulter_gérer">لإدارة سجل الغياب واستبعاد الطلاب والإحصاءات ، حدد فصلًا دراسيًا</string>
+    <string name="select"> اختر</string>
+    <string name="votre_séances"> الفصول الدراسية</string>
+    <string name="empty_password"> لا يمكن أن تكون كلمة المرور فارغة</string>
+
+
+    <!-- fragment_uploadjustification(uploadjustification).xml-->
+
+    <string name="upload_title"> اضغط على الزر لاختيار صورة من جهازك ، الحد الأقصى لحجم الصورة هو 16 ميجا بايت</string>
+    <string name="upload_image"> تحميل </string>
+    <string name="select_image"> اختر </string>
+    <string name="uploading"> تحميل ... </string>
+    <string name="select_another_image">اختر صورة أخرة</string>
+    <string name="upload_succ"> تم تحميل المبرر بنجاح ، يمكنك عرض المبرر بالضغط على الزر أدناه</string>
+    <string name="upload_not_succ">لم يتم تحميل المبرر, </string>
+    <string name="upload_fail"> لم يتم تحميل المبرر,تحقق من الشبكة وحاول مرة أخرى</string>
+    <string name="image_vide">لا يمكن أن تكون الصورة فارغة</string>
+    <string name="image_larg">حجم الصورة كبير جدًا</string>
+
+    <string name="completed"> انتهى</string>
+
+    <!-- fragment display image-->
+
+    <string name="justification_informations"> معلومات التبرير</string>
+    <string name="non_justifie"> غير مبرر</string>
+    <string name="justification_delete_succ"> تم حذف التبرير بنجاح ، يمكنك عرض سجل الغياب بالضغط على الزر أدناه</string>
+    <string name="justification_delete_fail"> لا يمكن حذف التبرير ، تحقق من شبكتك وحاول مرة أخرى</string>
+    <string name="zoom_in"> تكبير</string>
+    <string name="zoom_out"> تصغير</string>
+    <string name="download"> تحميل</string>
+    <string name="supprimer_justification"> حذف التبرير</string>
+    <string name="start_downloading">بدأ التحميل ...</string>
+    <string name="completed_download">انتهى التحميل</string>
+    <string name="cant_download">لا يمكن تنزيل الصورة</string>
+    <string name="pas_de_justifcation">لا يوجد مبرر لهذا الغياب</string>
+
+
+    <string name="votre_seance"> الفصول الدراسية</string>
+    <string name="gerer_seance"> إدارة هذه الحصة</string>
+    <string name="valide"> مؤكدة</string>
+    <string name="refuse"> مرفوض</string>
+    <string name="non_traite"> غير معالج</string>
+
+    <string name="etudiant"> طالب</string>
+    <string name="date_absence"> تاريخ الغياب</string>
+    <string name="justification_date"> تاريخ التبرير</string>
+    <string name="etat"> الحالة</string>
+
+
+    <string name="loading_data"> جاري تحميل البيانات ... يرجى الانتظار</string>
+    <string name="checking_access"> جاري التحقق من الوصول ... الرجاء الانتظار</string>
+    <string name="id"> التعريف</string>
+    <string name="show_justification"> إظهار التبرير</string>
+    <string name="justifier_absence"> تبرير الغياب</string>
+    <string name="copyright"> Ouaden Aymen - Djebess Zakaria</string>
+
+    <string name="erreur_not_succ">خطأ غير معروف ، حاول مرة أخرى لاحقًا!</string>
+    <string name="_0_100">0/100</string>
+    <string name="upload">رفع</string>
+    <string name="invalide_password">رمز مرور خاطئ</string>
+
+    <string name="supprimer_absence">حذف الغياب</string>
+    <string name="supprimer_absence_succ">تم حذف الغياب بنجاح</string>
+    <string name="groupe_aucune_asbence">جميع الطلاب ليس لديهم أي غياب للعرض</string>
+    <string name="etudiant_aucune_asbence"> ليس لديه أي غياب للعرض</string>
+    <string name="options"> خيارات </string>
+    <string name="ajouter_seance_ok">تم إضافة طلب حصة إضافية بنجاح</string>
+    <string name="supprimer_seance_ok">تم حذف طلب حصة إضافية بنجاح</string>
+    <string name="send_request">ارسل طلب</string>
+
+    <string name="changer_seance_ok">تمت إضافة طلب تغيير الفصل الدراسي بنجاح</string>
+    <string name="supprimer_changement_ok">تم حذف طلب تغيير الفصل الدراسي بنجاح</string>
+
+
+    <string name="nbr_abs_non_just">غياب غير مبرر</string>
+    <string name="nbr_abs_just">غياب مبرر</string>
+
+
+    ---------------------------------------------------------------------------------------------------
+    <string name="espace_etudiant">فضاء الطالب</string>
+    <string name="conge_academique">إجازة أكاديمية</string>
+    <string name="emploi_du_temps">الجدول الزمني</string>
+    <string name="code_module">رمز الوحدة</string>
+    <string name="date_seance">تاريخ الفصل</string>
+    <string name="no_absence_trouve">ليس لديك غيابات</string>
+    <string name="section">تقسيم</string>
+
+
+    <string name="historique">هذا الغياب له مبرر بالفعل ، انقر هنا للعرض</string>
+    <string name="ajouter_justification">أضف التبرير</string>
+    <string name="absences">الغيابات</string>
+    <string name="date_conge">تاريخ الإجازة الأكاديمية</string>
+    <string name="date_de_naissance">تاريخ الميلاد</string>
+    <string name="informations_conge">معلومات الإجازة الأكاديمية</string>
+    <string name="conge_existe">لا يمكنك الاتصال بالتطبيق لأن لديك إجازة أكاديمية</string>
+
+    <string name="permission_not_ok">التطبيق ليس لديه إذن لتنزيل الملفات</string>
+    <string name="back"> اضغط مرة أخرى للإنهاء!</string>
+    <string name="generate_qr"> إنشاء رمز الاستجابة السريعة</string>
+    <string name="manuel"> تسجيل الحضور يدويا</string>
+    <string name="qr_code"> لمزيد من الأمان ، يُفضل تغيير رمز الاستجابة السريعة في الشاشة الأولى لتجنب رمز قديم من جلسة قديمة</string>
+    <string name="change_qr"> تغيير الكود</string>
+    <string name="terminer_operation"> أكمل العملية</string>
+
+    <string name="nb_qr"> لا تترك الصفحة حتى نهاية العملية</string>
+    <string name="pas_de_seances"> ليس لديك أي  تسجبل حضورالآن</string>
+    <string name="qr_faux"> رمز الاستجابة السريعة خطأ</string>
+    <string name="pas_abs"> ليس لديك غيابات</string>
+    <string name="display_justification"> عرض المبرر</string>
+    <string name="upload_justification"> رفع المبرر</string>
+    <string name="notifications"> اشعارات</string>
+
+    <string name="conge_ok"> تم إضافة طلبك للإجازة الأكاديمية بنجاح</string>
+    <string name="conge_delete_ok"> تم تنفيذ طلبك بحذف الإجازة الأكاديمية بنجاح</string>
+
+    <string name="pourcentage">تمثل الأرقام الموجودة في الدائرة النسبة المئوية للغيابات في كل وحدة</string>
+
+    <!-- notification-->
+    <string name="seance_supp">حصة اضافي</string>
+    <string name="changement_seance">تغيير الحصة</string>
+    <string name="demande_de"> طلبك ل</string>
+    <string name="demande_ok"> تم قبوله</string>
+    <string name="demande_not_ok"> تم رفضه </string>
+    <string name="delete_notification_ok"> تم حذف الاشعار بن نجاح</string>
+    <string name="delete_notification_not_ok"> فشل حذف الإخطار</string>
+    <string name="notification_vide">ليس لديك إشعارات </string>
+
+
+    <string name="schedule">الجدول الزمني</string>
+    <string name="pas_de_seance">ليس لديك حصص</string>
+    <string name="your_schudule"> الجدول الزمني </string>
+    <string name="title_emploi">تم تمثيل الحصص الإضافية باللون الأحمر</string>
+
+
+    <!-- ofline mode-->
+    <string name="offline_mode"> وضع غير متصل بالشبكة</string>
+    <string name="offline_mode_title1">يمكنك حفظ قائمة الطلاب الغائبين في قاعدة بيانات مدمجة محليًا في تطبيقك. ستبقى حالات الغياب دائمًا حتى تقوم باستيرادها إلى الخادم أو حذفها يدويًا.
+    يجب عدم حذف بيانات التطبيق قبل استيراد حالات الغياب لتجنب فقدان قائمة الغيابات.</string>
+    <string name="next"> أكمل</string>
+    <string name="entrer_id_etudiant"> أدخل معرف الطالب</string>
+    <string name="offline_mode_title_login">يوجد خيار تسجيل الغياب في وضع عدم الاتصال للأساتذة فقط ، انقر هنا لعرضه</string>
+    <string name="finish">إنهاء </string>
+
+
+    <string name="sending_message">جاري ارسال رمز التحقق</string>
+    <string name="message_sent">تم إرسال كود التحقق ، تحقق من بريدك الإلكتروني</string>
+    <string name="searching_data">البحث عن البيانات</string>
+    <string name="please_wait">الرجاء الانتظار</string>
+    <string name="no_data_found">لاتوجد بيانات</string>
+
+
+    <string name="mark_all_seen">تحديد الكل مقروء</string>
+    <string name="Delete_all">حذف الكل</string>
+    <string name="show_default">العرض الافتراضي</string>
+    <string name="show_all_absences">كل الغيابات</string>
+    <string name="display">عرض</string>
+
+
+    <string name="bar">أعمدة بيانية(أيام و ساعات)</string>
+    <string name="circle">دائرة نسبية(الحصص)</string>
+    <string name="seance">حصة</string>
+
+    <string name="votre_id">معرف الهوية</string>
+    <string name="etudiant_id">أدخل هوية الطالب</string>
+    <string name="id_null">يجب أن يكون المعرف أكبر من الصفر</string>
+    <string name="id_empty">يجب ألا يكون المعرف فارغًا.</string>
+    <string name="duplicated">هذا الطالب مسجل بالفعل لهذا التاريخ.</string>
+
+    <string name="admin">لا يمكن الوصول إلى وظائف المسؤولين إلا من موقع الويب.</string>
+    <string name="your_notifications">اشعاراتك</string>
+</resources>

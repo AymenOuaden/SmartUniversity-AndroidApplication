@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+
+    >
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_espace_etudiant"
+            android:title="@string/espace_etudiant"
+            android:icon="@drawable/icon_menu"
+            />
+        <item
+            android:id="@+id/nav_marquer_presence"
+            android:title="@string/marquer_presence"
+            android:icon="@drawable/icon_take_presences"
+            />
+        <item
+            android:id="@+id/nav_gerer_absence"
+            android:title="@string/param"
+            android:icon="@drawable/icon_manage_absences"/>
+        <item
+            android:id="@+id/nav_emploi"
+            android:title="@string/schedule"
+            android:icon="@drawable/ic_schedule"/>
+        <item
+            android:id="@+id/nav_conge_academique"
+            android:title="@string/conge_academique"
+            android:icon="@drawable/icon_mail_add_class"
+            />
+
+    <item
+        android:id="@+id/nav_modifier_profile"
+        android:title="@string/edit"
+        android:icon="@drawable/icon_parametre" />
+
+
+    <item
+        android:id="@+id/nav_deconnecter"
+        android:title="@string/logout"
+        android:icon="@drawable/ic_logout" />
+
+    </group>
+
+</menu>

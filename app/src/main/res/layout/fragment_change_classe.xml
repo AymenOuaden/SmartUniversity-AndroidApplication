@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/message_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_4sdp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_top">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/options"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:foregroundGravity="center"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/add_classe"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@drawable/button_empty_color_accent_round"
+                        android:gravity="center"
+                        android:text="@string/ajouter_seance_s"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/change_classe"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/afficher_seances"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+
+                        android:background="@drawable/button_empty_color_accent_round"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="@string/afficher_seances"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/change_classe"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/change_classe"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:background="@drawable/button_full_color_accent_round"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/change_seance"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="parent"
+                        app:layout_constraintStart_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/informations"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_below="@id/options"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingRight="@dimen/_6sdp">
+
+                    <TextView
+                        android:id="@+id/groupe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black_light"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/code_module"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/black_light"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/black_light"
+                        android:textSize="@dimen/_12sdp"
+                        tools:ignore="RelativeOverlap" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/informations"
+                    android:layout_marginTop="@dimen/_1sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/old"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:visibility="visible"
+                        app:cardCornerRadius="@dimen/_6sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+
+                        <RelativeLayout
+                            android:id="@+id/top_table"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+
+                            <TableLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_empty_black_round"
+                                android:gravity="center"
+                                android:stretchColumns="0,1"
+                                tools:ignore="UselessParent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/black"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_8sdp"
+                                    android:text="@string/current_information"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14sdp"
+                                    android:textStyle="bold" />
+
+                                <TableRow
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorPrimaryDark">
+
+                                    <TextView
+                                        android:layout_width="20dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="0"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_6sdp"
+                                        android:text="@string/jour"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_14sdp"
+                                        android:textStyle="bold"
+                                        tools:ignore="TooDeepLayout" />
+
+                                    <TextView
+                                        android:layout_width="20dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="1"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_6sdp"
+                                        android:text="@string/heure"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_14sdp"
+                                        android:textStyle="bold" />
+                                </TableRow>
+
+                                <TextView
+                                    android:id="@+id/empty"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_6sdp"
+                                    android:text="@string/empty_seance_supp"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/red"
+                                    android:textSize="@dimen/_14sdp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <TableRow
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/backround_greyblue_light"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:id="@+id/old_day"
+                                        android:layout_width="20dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="0"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_6sdp"
+                                        android:text="@string/jour"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/old_hour"
+                                        android:layout_width="20dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="1"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_6sdp"
+                                        android:text="@string/heure"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textStyle="bold" />
+                                </TableRow>
+
+                            </TableLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/waiting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/old"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:visibility="gone"
+                        app:cardCornerRadius="@dimen/_6sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <RelativeLayout
+                            android:id="@+id/top_table2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+
+                            <TableLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_empty_black_round"
+                                android:gravity="center"
+                                android:stretchColumns="0,1,2,3"
+                                tools:ignore="UselessParent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/black"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_8sdp"
+                                    android:text="@string/waiting_information"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14sdp"
+                                    android:textStyle="bold" />
+
+                                <TableRow
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorAccent">
+
+                                    <TextView
+                                        android:layout_width="20dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="0"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="@string/new_jour"
+                                        android:paddingTop="@dimen/_6sdp"
+                                        android:paddingBottom="@dimen/_6sdp"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_12sdp"
+
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="20dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="1"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="@string/new_heure"
+                                        android:paddingTop="@dimen/_6sdp"
+                                        android:paddingBottom="@dimen/_6sdp"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="20dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="2"
+                                        android:layout_gravity="center"
+                                        android:paddingTop="@dimen/_6sdp"
+                                        android:paddingBottom="@dimen/_6sdp"
+                                        android:gravity="center"
+                                        android:text="@string/etat"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="20dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="3"
+                                        android:paddingTop="@dimen/_6sdp"
+                                        android:paddingBottom="@dimen/_6sdp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="@string/options"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textStyle="bold" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/backround_greyblue_light"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:id="@+id/waiting_day"
+                                        android:layout_width="20dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="0"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_6sdp"
+                                        android:text="@string/jour"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/waiting_hour"
+                                        android:layout_width="20dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="1"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_6sdp"
+                                        android:text="@string/heure"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/etat"
+                                        android:layout_width="20dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="2"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_6sdp"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textStyle="bold" />
+
+                                    <ImageView
+                                        android:id="@+id/supprimer"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_column="3"
+                                        android:layout_gravity="center"
+                                        android:contentDescription="@string/image_larg"
+                                        android:gravity="center"
+                                        android:src="@drawable/icon_delete_red" />
+                                </TableRow>
+
+
+                            </TableLayout>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/waiting"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/erreur_jour_heure"
+                        android:textAlignment="center"
+                        android:textColor="@color/red"
+                        android:visibility="gone" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/nouveau"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/message"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:visibility="gone"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/top_table3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:ignore="UselessParent">
+
+                                <TableLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/button_empty_black_round"
+                                    android:gravity="center"
+                                    android:stretchColumns="0,1,2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/black"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_8sdp"
+                                        android:text="@string/new_information"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_14sdp"
+                                        android:textStyle="bold" />
+
+                                    <TableRow
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/colorAccent"
+
+                                        >
+
+                                        <TextView
+                                            android:layout_width="40dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_column="0"
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:text="@string/new_jour"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:paddingTop="@dimen/_6sdp"
+                                            android:paddingBottom="@dimen/_6sdp"
+                                            android:textStyle="bold"
+                                            tools:ignore="TooDeepLayout" />
+
+                                        <TextView
+                                            android:layout_width="40dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_column="1"
+                                            android:gravity="center"
+                                            android:text="@string/new_heure"
+                                            android:layout_gravity="center"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:layout_width="40dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_column="2"
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:text="@string/options"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textStyle="bold" />
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/_40sdp"
+                                        android:background="@drawable/backround_greyblue_light"
+                                        android:visibility="visible">
+
+                                        <Spinner
+                                            android:id="@+id/new_day"
+                                            android:layout_width="20dp"
+                                            android:layout_height="@dimen/_40sdp"
+                                            android:layout_column="0"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:text="@string/jour"
+                                            android:textSize="@dimen/_14sdp" />
+
+                                        <Spinner
+                                            android:id="@+id/new_hour"
+                                            android:layout_width="20dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_column="1"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:text="@string/heure"
+                                            android:textSize="@dimen/_14sdp" />
+
+
+                                        <ImageView
+                                            android:id="@+id/changer"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:layout_column="2"
+                                            android:layout_gravity="center"
+                                            android:contentDescription="@string/image_larg"
+                                            android:foregroundGravity="center"
+                                            android:src="@drawable/icon_add_coloraccent" />
+
+
+                                    </TableRow>
+
+
+                                </TableLayout>
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/wait"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.6"
+        android:background="@drawable/button_full_black_round"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progress_waiting_load_data"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/text_waiting_load_data"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progress_waiting_load_data"
+            android:layout_marginBottom="5dp"
+            android:text="@string/loading_data"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

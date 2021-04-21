@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgound_gradien_green_white">
+
+    <RelativeLayout
+        android:id="@+id/glob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:text="@string/Faculté_ntic"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="@dimen/_26sdp"
+                app:fontFamily="serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:contentDescription="@string/error"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text1"
+                app:srcCompat="@drawable/line_decorated" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:contentDescription="@string/error"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/offline_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@color/black_light"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/offline_mode_title_login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView5" />
+
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/background_red_light_round"
+                android:drawableStart="@drawable/icon_error_red"
+                android:drawableLeft="@drawable/icon_error_red"
+                android:drawablePadding="@dimen/_4sdp"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:inputType="none"
+                android:paddingStart="8dp"
+                android:paddingLeft="@dimen/_6sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:textColor="@color/red"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/offline_mode"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/box_full_greengrey"
+                android:drawableStart="@drawable/icon_person"
+                android:drawableLeft="@drawable/icon_person"
+                android:drawablePadding="@dimen/_4sdp"
+                android:ems="10"
+                android:hint="@string/user"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_5sdp"
+                android:textCursorDrawable="@drawable/cursor_color_primary_dark"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/msg" />
+
+            <RelativeLayout
+                android:id="@+id/lay_pass"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="@drawable/box_full_greengrey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user">
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/box_full_greengrey"
+                    android:drawableStart="@drawable/icon_password"
+                    android:drawableLeft="@drawable/icon_password"
+                    android:drawablePadding="@dimen/_3sdp"
+                    android:ems="10"
+                    android:hint="@string/pass"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/_5sdp"
+                    android:textCursorDrawable="@drawable/cursor_color_primary_dark"
+                    android:textSize="@dimen/_14sdp" />
+
+                <ImageView
+                    android:id="@+id/invisible_pass"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/pass"
+                    android:layout_toRightOf="@id/pass"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/icon_visibility_off"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/visible_pass"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/pass"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/icon_visibility"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+            <CheckBox
+                android:id="@+id/chk"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:button="@drawable/icon_chekbox_empty_colorprimarydark"
+                android:checked="false"
+                android:drawablePadding="@dimen/_3sdp"
+
+                android:gravity="center_vertical"
+                android:onClick="chk"
+                android:text="@string/cnct"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lay_pass"
+                tools:ignore="UnusedAttribute" />
+
+            <Button
+                android:id="@+id/log"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/button_full_green_round"
+                android:onClick="login"
+                android:text="@string/login"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chk" />
+
+            <Button
+                android:id="@+id/forg"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/button_full_greylight_round"
+                android:text="@string/fp"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/log" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/cntct"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/forg" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:contentDescription="TODO"
+                app:layout_constraintEnd_toStartOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/forg"
+                app:srcCompat="@drawable/line_straight"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <ImageView
+                android:id="@+id/imageView9_help"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:contentDescription="TODO"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/forg"
+                app:srcCompat="@drawable/line_straight"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+
+            <ImageView
+                android:id="@+id/git"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@null"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView9_help"
+                app:srcCompat="@drawable/icon_github"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/fb"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:background="@null"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="chk"
+                app:layout_constraintEnd_toStartOf="@+id/git"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9_help"
+                app:srcCompat="@drawable/icon_fb"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/in"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:background="@null"
+                app:layout_constraintStart_toEndOf="@+id/git"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9_help"
+                app:srcCompat="@drawable/icon_linkden"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:drawableStart="@drawable/icon_copyright"
+                android:drawableLeft="@drawable/icon_copyright"
+                android:drawablePadding="@dimen/_3sdp"
+                android:fontFamily="serif"
+                android:gravity="center_vertical"
+                android:text="@string/copyright1"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/git" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:srcCompat="@drawable/line_straight"
+                tools:ignore="ContentDescription" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/wait"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:alpha="0.6"
+            android:background="@drawable/button_full_black_round"
+            android:padding="@dimen/_10sdp"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progress_waiting_load_data"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/text_waiting_load_data"
+                android:layout_width="@dimen/_170sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progress_waiting_load_data"
+                android:layout_marginBottom="5dp"
+                android:text="@string/checking_access"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

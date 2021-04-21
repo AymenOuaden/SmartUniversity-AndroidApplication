@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:drawable="@drawable/ic_departement"
+        android:width="@dimen/_23sdp"
+        android:height="@dimen/_23sdp"
+        android:gravity="center"
+        />
+
+</layer-list>

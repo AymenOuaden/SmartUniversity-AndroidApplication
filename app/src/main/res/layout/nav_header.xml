@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_160sdp"
+    android:background="@drawable/university_image"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/nav_white"
+        android:padding="0dp">
+
+        <TextView
+            android:id="@+id/nav_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:drawableStart="@drawable/icon_logo"
+            android:drawableLeft="@drawable/icon_logo"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:text="@string/Faculté_ntic"
+            android:textColor="@color/black"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nav_title"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</LinearLayout>

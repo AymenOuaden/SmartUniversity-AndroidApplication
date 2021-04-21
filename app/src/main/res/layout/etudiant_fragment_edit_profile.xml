@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/backround_greyblue_light"
+                android:gravity="center"
+                android:text="@string/update_title"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_20sdp" />
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:gravity="center"
+                android:padding="@dimen/_6sdp"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@id/message"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/update_title1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/_18sdp"
+                tools:ignore="LabelFor" />
+
+
+            <TextView
+                android:id="@+id/title_user"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@id/title1"
+                android:gravity="bottom"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/user"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@id/title_user"
+                android:background="@drawable/backround_greyblue_light"
+                android:drawableStart="@drawable/icon_person"
+                android:drawableLeft="@drawable/icon_person"
+                android:drawablePadding="@dimen/_6sdp"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="@dimen/_6sdp"
+                android:textSize="@dimen/_16sdp"
+                tools:ignore="Autofill,LabelFor" />
+
+
+            <TextView
+                android:id="@+id/title_pass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/user"
+                android:gravity="bottom"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/pass"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/title_pass"
+                android:background="@drawable/backround_greyblue_light"
+                android:drawableStart="@drawable/icon_password"
+                android:drawableLeft="@drawable/icon_password"
+                android:drawablePadding="@dimen/_6sdp"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:padding="@dimen/_6sdp"
+                android:textSize="@dimen/_16sdp"
+                tools:ignore="LabelFor" />
+
+
+            <EditText
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@id/pass"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/update_title2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/_18sdp"
+                tools:ignore="Autofill,LabelFor" />
+
+
+            <TextView
+                android:id="@+id/title_adress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/title2"
+                android:gravity="bottom"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/adr"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/adress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/title_adress"
+                android:background="@drawable/backround_greyblue_light"
+                android:drawableStart="@drawable/icon_location"
+                android:drawableLeft="@drawable/icon_location"
+                android:drawablePadding="@dimen/_6sdp"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="@dimen/_6sdp"
+                android:textSize="@dimen/_16sdp"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/title_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/adress"
+                android:gravity="bottom"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/email"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/title_email"
+                android:background="@drawable/backround_greyblue_light"
+                android:drawableStart="@drawable/icon_mail"
+                android:drawableLeft="@drawable/icon_mail"
+                android:drawablePadding="@dimen/_6sdp"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/_6sdp"
+                android:textSize="@dimen/_16sdp"
+                tools:ignore="Autofill,LabelFor" />
+
+
+            <TextView
+                android:id="@+id/title_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/mail"
+                android:gravity="bottom"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/telephone"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/telephone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/title_telephone"
+                android:background="@drawable/backround_greyblue_light"
+                android:drawableStart="@drawable/icon_phone"
+                android:drawableLeft="@drawable/icon_phone"
+                android:drawablePadding="@dimen/_6sdp"
+                android:inputType="number"
+                android:padding="@dimen/_6sdp"
+                android:textSize="@dimen/_16sdp"
+                tools:ignore="Autofill,LabelFor,TextFields" />
+
+
+            <TextView
+                android:id="@+id/titleplus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/telephone"
+                android:gravity="top"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/no_chng"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_16sdp" />
+
+
+            <TextView
+                android:id="@+id/title_nom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@id/titleplus"
+                android:gravity="bottom"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/nom"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/nom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/title_nom"
+                android:background="@drawable/backround_greyblue_light"
+                android:drawableStart="@drawable/icon_contact"
+                android:drawableLeft="@drawable/icon_contact"
+                android:drawablePadding="@dimen/_6sdp"
+                android:focusable="false"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:padding="@dimen/_6sdp"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/_16sdp"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/title_prenom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/nom"
+                android:gravity="bottom"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/prenom"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/prenom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/title_prenom"
+                android:background="@drawable/backround_greyblue_light"
+                android:drawableStart="@drawable/icon_contact"
+                android:drawableLeft="@drawable/icon_contact"
+                android:drawablePadding="@dimen/_6sdp"
+                android:focusable="false"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:padding="@dimen/_6sdp"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/_16sdp"
+                tools:ignore="LabelFor" />
+
+
+            <TextView
+                android:id="@+id/title_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/prenom"
+                android:gravity="bottom"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/date"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/title_date"
+                android:background="@drawable/backround_greyblue_light"
+                android:drawableStart="@drawable/icon_date"
+                android:drawableLeft="@drawable/icon_date"
+                android:drawablePadding="@dimen/_6sdp"
+                android:focusable="false"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:padding="@dimen/_6sdp"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/_16sdp"
+                tools:ignore="LabelFor,TextFields" />
+
+
+            <EditText
+                android:id="@+id/title_autre"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@id/date"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/autres"
+
+                android:textColor="@color/colorPrimaryDark"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/_18sdp"
+                tools:ignore="Autofill,LabelFor" />
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_autre"
+                android:gravity="top"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/no_chng"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_16sdp" />
+
+
+            <TextView
+                android:id="@+id/title_departement"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/title3"
+                android:gravity="bottom"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/departement"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/departement"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/title_departement"
+                android:background="@drawable/backround_greyblue_light"
+                android:drawableStart="@drawable/icon_department"
+                android:drawableLeft="@drawable/icon_department"
+                android:drawablePadding="@dimen/_6sdp"
+                android:focusable="false"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:padding="@dimen/_6sdp"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/_16sdp"
+                tools:ignore="Autofill,LabelFor" />
+
+            <TextView
+                android:id="@+id/title_annee"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/departement"
+                android:gravity="bottom"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/annee"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/annee"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/title_annee"
+                android:background="@drawable/backround_greyblue_light"
+                android:drawableStart="@drawable/icon_year"
+                android:drawableLeft="@drawable/icon_year"
+                android:drawablePadding="@dimen/_6sdp"
+                android:focusable="false"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:padding="@dimen/_6sdp"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/_16sdp"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/title_specialite"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/annee"
+                android:gravity="bottom"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/specialite"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/specialite"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/title_specialite"
+                android:background="@drawable/backround_greyblue_light"
+                android:drawablePadding="@dimen/_6sdp"
+                android:focusable="false"
+                android:drawableLeft="@drawable/icon_specialite"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:padding="@dimen/_6sdp"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/_16sdp"
+                tools:ignore="LabelFor"
+                android:drawableStart="@drawable/icon_specialite" />
+
+            <TextView
+                android:id="@+id/title_groupe"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/specialite"
+                android:gravity="bottom"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/groupe"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/groupe"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/title_groupe"
+                android:background="@drawable/backround_greyblue_light"
+                android:drawableStart="@drawable/icon_group"
+                android:drawableLeft="@drawable/icon_group"
+                android:drawablePadding="@dimen/_6sdp"
+                android:focusable="false"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:padding="@dimen/_6sdp"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/_16sdp"
+                tools:ignore="LabelFor" />
+
+
+            <TextView
+                android:id="@+id/title_etat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/groupe"
+                android:gravity="bottom"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/etat"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/etat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/title_etat"
+                android:background="@drawable/backround_greyblue_light"
+                android:drawableStart="@drawable/icon_person"
+                android:drawableLeft="@drawable/icon_person"
+                android:drawablePadding="@dimen/_6sdp"
+                android:focusable="false"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                android:padding="@dimen/_6sdp"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/_16sdp"
+                tools:ignore="LabelFor" />
+
+            <Button
+                android:id="@+id/save_changes"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etat"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:background="@drawable/button_empty_color_accent_round"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/save_changes"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/wait"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.6"
+        android:background="@drawable/button_full_black_round"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progress_waiting_load_data"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/text_waiting_load_data"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progress_waiting_load_data"
+            android:layout_marginBottom="5dp"
+            android:text="@string/loading_data"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

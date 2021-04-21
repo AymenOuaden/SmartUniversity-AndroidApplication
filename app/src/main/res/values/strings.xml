@@ -1,0 +1,349 @@
+<resources>
+
+    <string name="Faculté_ntic">NTIC Faculty</string>
+
+    <!-- login.xml __ connexion -->
+    <string name="base_url">"192.168.1.5/SmartUniversity-API/api/"</string>
+    <string name="app_name">NTIC</string>
+    <string name="error">Error !</string>
+    <string name="user">Username</string>
+    <string name="pass">Password</string>
+    <string name="login">Login</string>
+    <string name="cnct">Stay connected</string>
+    <string name="fp">Forgot password ?</string>
+    <string name="cntct">Contact Us</string>
+    <string name="logout">Log out</string>
+    <string name="copyright1">Ouaden Aymen - Djebess zakaria</string>
+
+    <!--  login.xml __ erreur-->
+    <string name="error_lenght">Password should contain at least 6 characters</string>
+    <string name="error_user_pass">Unvalide username or password </string>
+    <string name="not_empty">Username and Password can not be empty </string>
+    <string name="network">Check your network and try again </string>
+    <string name="not_enseignant">You are\'not a teacher or a student </string>
+
+
+    <!-- forgot_Password.xml-->
+    <string name="email_exemple"> exempl@gmail.com</string>
+    <string name="title_password">Enter your email address to reset your password.  </string>
+    <string name="reset_password">Reset password  </string>
+    <string name="new_password">New password  </string>
+    <string name="conf_password">Confirm password  </string>
+    <string name="check_code"> Check code </string>
+    <string name="enter_code"> We just sent a code with six characters to your email address \n Enter that code to reset your password</string>
+    <string name="message_mail">\n Hello, \n \n You recently requested a password reset for your account. To complete the process,
+        copy the code below (six characters) and put it in your application . If you didn\'t make this change , ignore the email.</string>
+    <string name="ntic_admin"> Smart University - NTIC </string>
+    <string name="password_subject"> Request changing password - NTIC </string>
+    <string name="wrong_code"> Wrong code , try again! </string>
+    <string name="wrong_password"> Your password and confirmation password do not match </string>
+    <string name="wrong_email"> Wrong email! </string>
+    <string name="update_password_succ"> Your password has been updated successfully </string>
+    <string name="enter_new_pass"> Enter new password </string>
+
+
+    <!-- fragment_espace_enseignant.xml__options-->
+    <string name="edit">Edit Profile</string>
+    <string name="delete">Delete Account</string>
+    <string name="param">Manage absences</string>
+    <string name="consulter_seance">list of classes</string>
+    <string name="change_seance">Change class</string>
+    <string name="ajouter_seance">Add class</string>
+    <string name="ajouter_seance_s">Add class</string>
+    <string name="presence">Take presences</string>
+
+    <string name="espace_enseignant">Teacher space</string>
+
+    <!-- fragment_espace_enseignant.xml__messages-->
+    <string name="marquer_presence_ok">students absent are registered successfully.</string>
+    <string name="marquer_presence_not_ok">error, absent students are not saved, try later.</string>
+
+
+    <!-- fragment_delete account.xml-->
+    <string name="con_delete">Are you sure you want to delete your acount !</string>
+    <string name="entrer_password">  enter your password to continue </string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="del">Delete account</string>
+    <string name="ps">Invalide password </string>
+    <string name="account_deleted">  enter your password to continue </string>
+    <string name="delete_succ">  Your account has been deleted successfully </string>
+
+
+    <!-- fragment_update account.xml-->
+    <string name="update_title">Update your profile </string>
+    <string name="update_title1">Login </string>
+    <string name="update_title2">Personal informations </string>
+    <string name="nom"> Last name </string>
+    <string name="prenom"> First name </string>
+    <string name="date"> Date </string>
+    <string name="email"> Email </string>
+    <string name="adr"> address </string>
+    <string name="telephone"> phone </string>
+    <string name="grade"> Grade </string>
+    <string name="type"> Type </string>
+    <string name="departement"> Department </string>
+    <string name="autres"> Others </string>
+    <string name="no_chng"> You can not change those informations </string>
+    <string name="save_changes">Save changes </string>
+    <string name="modifier_ok">Your profile has been successfully updated </string>
+    <string name="modifier_not_ok">We can\'t update your profile , Please try again later </string>
+    <string name="phone_erreur">phone number should contain at 10 numbers </string>
+    <string name="no_change_erreur">You should change at least one data </string>
+
+
+    <!-- liste des séances-->
+    <string name="nom_module"> Module name</string>
+    <string name="jour"> Day </string>
+    <string name="new_jour"> New Day </string>
+    <string name="heure"> Hour </string>
+    <string name="new_heure">New Hour </string>
+    <string name="type_seance"> Type </string>
+    <string name="groupe"> Group </string>
+    <string name="annee"> Year </string>
+    <string name="specialite"> Speciality </string>
+    <string name="marquer_presence"> Take presences </string>
+    <string name="num"> Class number </string>
+
+
+    <!-- fragment_delete account.xml-->
+    <string name="gerer_relve">manage the absence report </string>
+    <string name="consulter_etudiants_exclus">consult the list of excluded students </string>
+    <string name="consulter_statistiques">view statistics</string>
+    <string name="title_activity_tst">tst</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_espace_enseignant">Teacher Space</string>
+    <string name="menu_marquer_presence">Gallery</string>
+    <string name="menu_gerer_absence">Slideshow</string>
+    <string name="menu_ajouter_seance">Tools</string>
+    <string name="menu_changer_seance">Share</string>
+    <string name="menu_modifier_profile">Account Settings</string>
+    <string name="menu_supprimer_profile">Send</string>
+
+    <!-- fragment_delete account.xml-->
+    <string name="statistiques">view statistics</string>
+    <string name="releve">Manage Absence report</string>
+    <string name="exclus">display excluded students</string>
+    <string name="afficher_seances">choose another  class</string>
+
+    <string name="statistiques_title">Consulter Statistiques</string>
+    <string name="releve_title"> student absence report</string>
+
+    <string name="toolbar_exclus">excluded students </string>
+    <string name="exclus_title">list of excluded students</string>
+    <string name="non_etudiant_exclus">No student is excluded for this group</string>
+
+    <string name="toolbar_releve_absence">absences list</string>
+    <string name="releve_absence_title">the absence report</string>
+    <string name="number">number</string>
+
+    <!-- fragment_marquer présence.xml-->
+    <string name="message_select">Select the date and absent students</string>
+    <string name="save">Save</string>
+    <string name="message_error_date">Date can\'t be empty , select a date please.</string>
+    <string name="message_error_empty_liste">The list of absent students can\'t be empty , select at least one student. </string>
+    <string name="message_error_no_student_found">no student corresponds to this session.</string>
+    <string name="import_absence_list">Import absences list</string>
+
+
+    <!-- fragment_gérer_absence(manage absences).xml-->
+
+
+    <string name="dimanche">Sunday</string>
+    <string name="lundi">Monday</string>
+    <string name="mardi">Tuesday</string>
+    <string name="mercredi">Wednesday</string>
+    <string name="jeudi">Thursday</string>
+
+    <string name="empty_seance_supp">no additional classe found</string>
+    <string name="current_information">current information for this class</string>
+    <string name="waiting_information">you already have a change request for this class</string>
+    <string name="new_information">request a change for this class</string>
+    <string name="erreur_jour_heure">You or your group have already a class this time, you must change at least one of day or hour</string>
+    <string name="supprimer">Delete</string>
+    <string name="changer">change</string>
+
+
+    <string name="title_consulter_marquer">To mark presences, select a class</string>
+    <string name="title_consulter_ajouter">To add an extra class, select a class</string>
+    <string name="title_consulter_changer">To make a class changement request , select a class</string>
+    <string name="title_consulter_gérer">to manage absences and excluded students and statistics, select a class</string>
+    <string name="select"> Select</string>
+    <string name="votre_séances"> Your classes</string>
+    <string name="empty_password"> Password can\'t be empty </string>
+
+
+    <!-- fragment_uploadjustification(uploadjustification).xml-->
+
+    <string name="upload_title"> Press button to select image from your device , the maximal image size is 16 MB</string>
+    <string name="upload_image"> Upload </string>
+    <string name="select_image"> Select </string>
+    <string name="uploading"> Uploading ... </string>
+    <string name="select_another_image">Select another image</string>
+    <string name="upload_succ"> Uploading justification has been successfully completed, you can display the justificaction by pressin the bouton below</string>
+    <string name="upload_not_succ"> Uploading justification can\'not be done, </string>
+    <string name="upload_fail"> Uploading justification can\'not be done, chek your network and try again </string>
+    <string name="image_vide">image can\'t be empty</string>
+    <string name="image_larg">image size is too large</string>
+
+    <string name="completed"> Completed</string>
+
+    <!-- fragment display image-->
+
+    <string name="justification_informations"> Informations of jusitification</string>
+    <string name="non_justifie"> Unjustified</string>
+    <string name="justification_delete_succ"> Deleting justification has been successfully completed, you can display the Absences record by pressin the bouton below</string>
+    <string name="justification_delete_fail"> Deleting justification can\'not be done, chek your network and try again</string>
+    <string name="zoom_in"> Zoom in</string>
+    <string name="zoom_out"> Zoom out</string>
+    <string name="download"> Download</string>
+    <string name="supprimer_justification"> Delete justification</string>
+    <string name="start_downloading">Start downloading ..</string>
+    <string name="completed_download">Completed download</string>
+    <string name="cant_download">Can\'t download image</string>
+    <string name="pas_de_justifcation">There is no justification for this absence</string>
+
+
+    <string name="votre_seance"> Your classes </string>
+    <string name="gerer_seance"> Manage this class</string>
+    <string name="valide"> Valid</string>
+    <string name="refuse"> Reject</string>
+    <string name="non_traite"> Untreated</string>
+
+    <string name="etudiant"> Student</string>
+    <string name="date_absence"> Absence date</string>
+    <string name="justification_date"> Justification date</string>
+    <string name="etat"> State</string>
+
+
+    <string name="loading_data"> Loading data... Please wait</string>
+    <string name="checking_access"> Checking access... Please wait</string>
+    <string name="id"> ID</string>
+    <string name="show_justification"> Show justification</string>
+    <string name="justifier_absence"> Justify absence</string>
+    <string name="copyright"> Ouaden Aymen - Djebess Zakaria</string>
+
+    <string name="erreur_not_succ">Unrecognized error, try again later!</string>
+    <string name="_0_100">0/100</string>
+    <string name="upload">Upload</string>
+    <string name="invalide_password">Invalid password</string>
+
+    <string name="supprimer_absence">Delete absence</string>
+    <string name="supprimer_absence_succ">Absence has been deleted successfully</string>
+    <string name="groupe_aucune_asbence">All students d\'ont have any absence to show </string>
+    <string name="etudiant_aucune_asbence"> d\'ont have any absence to show </string>
+    <string name="options"> Options </string>
+    <string name="ajouter_seance_ok">Request of an Extra Class has been added successfully</string>
+    <string name="supprimer_seance_ok">Request of Extra Class has been deleted successfully</string>
+    <string name="send_request">Send Request</string>
+
+    <string name="changer_seance_ok">Request of Class changing has been added successfully</string>
+    <string name="supprimer_changement_ok">Request of  Class changing has been deleted successfully</string>
+
+
+    <string name="nbr_abs_non_just">Unjustified absence</string>
+    <string name="nbr_abs_just">Justified absence</string>
+
+
+    ---------------------------------------------------------------------------------------------------
+    <string name="espace_etudiant">Student space</string>
+    <string name="conge_academique">Academic leave</string>
+    <string name="emploi_du_temps">Emploi du temps</string>
+    <string name="code_module">Module code</string>
+    <string name="date_seance">Class date</string>
+    <string name="no_absence_trouve">You have no absences</string>
+    <string name="section">Section</string>
+
+
+    <string name="historique">This absence already has a justification, click here to display</string>
+
+    <string name="ajouter_justification">Add justification</string>
+    <string name="absences">Absences</string>
+    <string name="date_conge">date of academic leave</string>
+    <string name="date_de_naissance">Date of Birth</string>
+    <string name="informations_conge">Academic leave informations</string>
+    <string name="conge_existe">You can\'t connect to the application because you have an academic leave </string>
+
+
+    <string name="permission_not_ok">Application has no permission to download files</string>
+    <string name="back"> Press back again to quit!</string>
+    <string name="generate_qr"> Generate QR code</string>
+    <string name="manuel"> Take presences manually</string>
+    <string name="qr_code"> For more security, preferably change the QR code in the first display to avoid an old code from an old session</string>
+    <string name="change_qr"> Change code</string>
+    <string name="terminer_operation"> complete the process</string>
+
+    <string name="nb_qr"> Don\'t leave the page until the end of the operation</string>
+    <string name="pas_de_seances"> You don\'t have any presences marking class right now </string>
+    <string name="qr_faux"> QR code is wrong</string>
+    <string name="pas_abs"> You have no absences</string>
+    <string name="display_justification"> Display justification</string>
+    <string name="upload_justification"> Upload justification</string>
+    <string name="notifications"> Notifications</string>
+
+    <string name="conge_ok"> Your request of an academic leave has been added successfully </string>
+    <string name="conge_delete_ok"> Your request of deleting the academic leave has been done successfully </string>
+
+    <string name="pourcentage"> The numbers in the circle present the percentage of absences in each module </string>
+
+    <!-- notification-->
+    <string name="seance_supp"> Extra Class </string>
+    <string name="changement_seance"> Class changing </string>
+    <string name="demande_de"> Your request of </string>
+    <string name="demande_ok"> has been accepted </string>
+    <string name="demande_not_ok"> has been rejected </string>
+    <string name="delete_notification_ok"> The notification has benn deleted successfully </string>
+    <string name="delete_notification_not_ok"> Deleting notification failed </string>
+    <string name="notification_vide"> You have no notification to show</string>
+
+
+    <string name="schedule">Schedule</string>
+    <string name="pas_de_seance">You have no class</string>
+    <string name="your_schudule"> Your schudule </string>
+    <string name="title_emploi"> Extra classes are represented by the color red </string>
+
+
+    <!-- ofline mode-->
+    <string name="offline_mode"> Offline mode</string>
+    <string name="offline_mode_title1">you can save the list of absent students in a database locally integrated in your application. absences will always remain until you import them into the server or delete them manually.
+    you must not delete the application data before importing absences to avoid losing the absences list.</string>
+    <string name="next"> Next</string>
+    <string name="entrer_id_etudiant"> Enter Student ID </string>
+    <string name="offline_mode_title_login">the option to take presences exists in the offline mode only for teachers, click here to display it </string>
+    <string name="finish">Finish </string>
+
+    <string name="sending_message">Sending code </string>
+    <string name="message_sent">Code sent, check your email </string>
+    <string name="searching_data">Searching data ...</string>
+    <string name="please_wait">Please wait ... </string>
+    <string name="no_data_found">No data found</string>
+
+    <string name="mark_all_seen">Mark All Seen</string>
+    <string name="Delete_all">Delete All</string>
+    <string name="show_default">Show Default</string>
+    <string name="show_all_absences">Show all absences</string>
+    <string name="display">Display</string>
+
+
+    <string name="bar">Chart bar(Days and Hours)</string>
+    <string name="circle">chart pie(Class)</string>
+    <string name="seance">Class</string>
+
+    <string name="votre_id">Your ID</string>
+    <string name="etudiant_id">Enter student ID</string>
+    <string name="id_null">ID should be bigger then zero</string>
+    <string name="id_empty">ID can\'t be empty</string>
+    <string name="duplicated">this student is already registered for this date</string>
+
+
+    <string name="admin">The functions of the administrators are only accessible from the website.</string>
+    <string name="your_notifications">Your notifications</string>
+
+
+</resources>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/conf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/confrm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/conf"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/con_delete"
+                android:textAlignment="center"
+                android:textSize="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="NotSibling" />
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:background="@drawable/button_full_green_round"
+                android:text="@string/yes"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/no"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/confrm" />
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:background="@drawable/button_full_red_round"
+                android:text="@string/no"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/yes"
+                app:layout_constraintTop_toTopOf="@id/confrm" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/confirmation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/confirmation"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/entrer_password"
+                android:textAlignment="center"
+                android:textSize="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="NotSibling" />
+
+            <EditText
+                android:id="@+id/erreur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/msg"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/background_red_light"
+                android:drawableBottom="@drawable/icon_error_red"
+                android:drawablePadding="5dp"
+                android:focusable="false"
+                android:gravity="center"
+                android:inputType="none"
+                android:padding="@dimen/_6sdp"
+                android:textColor="@color/red"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/_16sdp"
+                android:visibility="gone"
+                tools:ignore="Autofill,LabelFor" />
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@id/erreur"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableStart="@drawable/icon_password"
+                android:drawableLeft="@drawable/icon_password"
+                android:drawablePadding="@dimen/_6sdp"
+                android:hint="@string/pass"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:textSize="@dimen/_16sdp"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/delete_account"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@id/pass"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/button_full_green_round"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/del"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wait"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:alpha="0.6"
+            android:background="@drawable/button_full_black_round"
+            android:padding="@dimen/_10sdp"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progress_waiting_load_data"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/text_waiting_load_data"
+                android:layout_width="@dimen/_170sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progress_waiting_load_data"
+                android:layout_marginBottom="5dp"
+                android:text="@string/loading_data"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+

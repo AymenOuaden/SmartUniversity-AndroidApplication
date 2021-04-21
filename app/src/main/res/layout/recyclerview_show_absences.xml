@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/box_empty_black"
+    android:orientation="vertical"
+    android:padding="@dimen/_1sdp">
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/backround_greyblue_light"
+        android:gravity="center"
+        android:paddingBottom="@dimen/_2sdp"
+        android:stretchColumns="0,1,2,3,4"
+        tools:ignore="UselessParent">
+
+
+        <TableRow
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_50sdp">
+
+
+            <TextView
+                android:id="@+id/nom_etudiant"
+                android:layout_width="16dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/backround_greyblue_light"
+                android:gravity="center"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/prenom_etudiant"
+                android:layout_width="16dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/backround_greyblue_light"
+                android:gravity="center"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/backround_greyblue_light"
+                android:gravity="center"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/etat"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/backround_greyblue_light"
+                android:gravity="center"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+
+                />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lay"
+                android:layout_width="14dp"
+                android:layout_height="match_parent"
+                android:layout_column="4"
+                android:background="@drawable/backround_greyblue_light"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/option_justifier"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:src="@drawable/ic_add_coloraccent"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"  />
+
+                <ImageView
+                    android:id="@+id/show_justification"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:src="@drawable/icon_list_green"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageView
+                    android:id="@+id/option_supprimer"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/icon_delete_red"
+                    android:text="@string/supprimer_absence"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toTopOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>

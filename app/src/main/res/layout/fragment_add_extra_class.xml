@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/message_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_4sdp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_top">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_5sdp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/options"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:foregroundGravity="center"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/add_classe"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@drawable/button_full_color_accent_round"
+                        android:gravity="center"
+                        android:text="@string/ajouter_seance_s"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/change_classe"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/afficher_seances"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:background="@drawable/button_empty_color_accent_round"
+                        android:gravity="center"
+
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/afficher_seances"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/change_classe"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/change_classe"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:background="@drawable/button_empty_color_accent_round"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/change_seance"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="parent"
+                        app:layout_constraintStart_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/informations"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@id/options"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_6sdp"
+                    android:paddingRight="@dimen/_6sdp">
+
+                    <TextView
+                        android:id="@+id/groupe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black_light"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/code_module"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/black_light"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/black_light"
+                        android:textSize="@dimen/_12sdp"
+                        tools:ignore="RelativeOverlap" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/informations"
+                    android:layout_marginTop="@dimen/_2sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp"
+                        app:cardCornerRadius="@dimen/_16sdp"
+                        app:cardElevation="@dimen/_5sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/top_table"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TableLayout
+
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:background="@drawable/backround_greyblue_light"
+                                    android:elevation="@dimen/_10sdp"
+                                    android:gravity="center"
+                                    android:stretchColumns="0,1,2,3"
+                                    tools:ignore="UnusedAttribute,UselessParent">
+
+                                    <TableRow
+
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/_40sdp"
+                                        android:background="@color/colorPrimaryDark"
+                                        tools:ignore="TooDeepLayout">
+
+
+                                        <TextView
+                                            android:id="@+id/day"
+                                            android:layout_width="@dimen/_20sdp"
+                                            android:layout_height="@dimen/_40sdp"
+                                            android:layout_column="0"
+                                            android:gravity="center"
+                                            android:text="@string/jour"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textStyle="bold"
+                                            tools:ignore="TooDeepLayout" />
+
+                                        <TextView
+                                            android:id="@+id/hour"
+                                            android:layout_width="@dimen/_20sdp"
+                                            android:layout_height="@dimen/_40sdp"
+                                            android:layout_column="1"
+                                            android:gravity="center"
+                                            android:text="@string/heure"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/etat"
+                                            android:layout_width="@dimen/_20sdp"
+                                            android:layout_height="match_parent"
+                                            android:layout_column="2"
+                                            android:gravity="center"
+                                            android:text="@string/etat"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/supprimer"
+                                            android:layout_width="@dimen/_20sdp"
+                                            android:layout_height="@dimen/_40sdp"
+                                            android:layout_column="3"
+                                            android:gravity="center"
+                                            android:text="@string/options"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textStyle="bold" />
+
+                                    </TableRow>
+                                </TableLayout>
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/empty"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/top_table"
+                                android:gravity="center"
+                                android:padding="@dimen/_8sdp"
+                                android:text="@string/empty_seance_supp"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/_14sdp"
+                                android:visibility="gone" />
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/top_table"
+                                tools:ignore="NestedScrolling">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/recycler"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/blue_light" />
+
+
+                                </RelativeLayout>
+                            </ScrollView>
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="@string/erreur_jour_heure"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/message"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:stretchColumns="0,2,2">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        >
+
+                        <Spinner
+                            android:id="@+id/spinner1"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_column="0"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:foregroundGravity="center_vertical"
+                            android:gravity="center_vertical"
+
+                            android:spinnerMode="dropdown" />
+
+                        <Spinner
+                            android:id="@+id/spinner2"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_column="1"
+                            android:foregroundGravity="center_vertical"
+                            android:gravity="center_vertical"
+
+                            android:spinnerMode="dropdown" />
+
+                        <Button
+                            android:id="@+id/demander"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_3sdp"
+                            android:layout_marginRight="@dimen/_3sdp"
+                            android:background="@drawable/button_empty_black_round"
+                            android:foregroundGravity="center"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/_6sdp"
+                            android:text="@string/send_request"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_12sdp"
+
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/wait"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.6"
+        android:background="@drawable/button_full_black_round"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progress_waiting_load_data"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/text_waiting_load_data"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progress_waiting_load_data"
+            android:layout_marginBottom="5dp"
+            android:text="@string/loading_data"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
