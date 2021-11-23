@@ -7,6 +7,7 @@ API est dans : https://github.com/ZakariaDjebbes/Smartunversity/tree/master/Smar
  Les différents logiciels et technologies utilisés pour le développement de notre application mobile sont :
 
 1. Android studio : Android studio version 3.5.2, Gradle version : 5.4.1
+
    Android Studio est un environnement de développement pour développer des applications mobiles Android. Il est basé sur IntelliJ IDEA et utilise le moteur de production Gradle. Il peut être téléchargé sous les systèmes d'exploitation Windows, macOS, Chrome OS et Linux. Il permet de faciliter le développement en offrant différents outils et fonctionnalités. Pour l’installer il est nécessaire d’installer le kit de développement Android SDK et le kit de développement JDK.
 
 2. Android SDK
