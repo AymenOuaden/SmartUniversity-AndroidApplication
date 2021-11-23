@@ -47,7 +47,9 @@
   Et dans la dernière méthode, on a pris en considération le cas de mauvaise connexion internet, cette méthode est basée essentiellement sur la bibliothèque « SQLite » selon le principe suivant :
 - L’enseignant accède au mode hors-ligne et entre son identificateur, le jour et l’heure de la séance. Puis il ajoute les identifiants des étudiants absents. Ces absences sont enregistrées localement dans le téléphone à l’aide d’une base de données SQLite. Ces dernières données resteront jusqu'à que l’enseignant télécharge la liste des absences vers le serveur ou efface les données de l’application manuellement depuis les paramètres.
 - Lorsque l’enseignant connecte correctement à l’application, il peut télécharger la liste des absences vers le serveur en cliquant sur le bouton « importer liste d’absences », les absences seront effacées automatiquement depuis la base de données SQLite.
+
 Connexion en trois langues:
+
 
 <img src="Images/ang.png" width="250" style="margin-left: 50px">  <img src="Images/fr.png" width="250" style="margin-left: 50px"> <img src="Images/ar.png" width="250" style="margin-left: 50px">
 
