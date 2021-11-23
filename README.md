@@ -1,4 +1,4 @@
-# NTIC_Android
+# SmartUniversity-AndroidApplication
 
 API est dans : https://github.com/ZakariaDjebbes/Smartunversity/tree/master/SmartUniversity-API
 
