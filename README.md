@@ -1,5 +1,3 @@
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
 # NTIC_Android
 
 
@@ -51,4 +49,4 @@
 - Lorsque l’enseignant connecte correctement à l’application, il peut télécharger la liste des absences vers le serveur en cliquant sur le bouton « importer liste d’absences », les absences seront effacées automatiquement depuis la base de données SQLite.
 
 Connexion en trois langues:
-<img src="Images/ang.png" width="250"> <img src="Images/fr.png" width="250"> <img src="Images/ar.png" width="250">
+<img src="Images/ang.png" width="250" style="margin: 25px 50px 75px 100px"> <img src="Images/fr.png" width="250"> <img src="Images/ar.png" width="250">
