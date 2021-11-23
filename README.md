@@ -49,6 +49,6 @@
 - Lorsque l’enseignant connecte correctement à l’application, il peut télécharger la liste des absences vers le serveur en cliquant sur le bouton « importer liste d’absences », les absences seront effacées automatiquement depuis la base de données SQLite.
 Connexion en trois langues:
 
-<img src="Images/ang.png" width="250"> 
-<img src="Images/fr.png" width="250"> 
-<img src="Images/ar.png" width="250">
+<img src="Images/ang.png" width="250">  <img src="Images/fr.png" width="250"> <img src="Images/ar.png" width="250">
+
+
