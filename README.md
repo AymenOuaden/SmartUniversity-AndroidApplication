@@ -2,7 +2,8 @@
 
 API est dans : https://github.com/ZakariaDjebbes/Smartunversity/tree/master/SmartUniversity-API
 
- • Outils logiciel
+ • Outils logiciel :
+ 
  Les différents logiciels et technologies utilisés pour le développement de notre application mobile sont :
 
 1. Android studio : Android studio version 3.5.2, Gradle version : 5.4.1
