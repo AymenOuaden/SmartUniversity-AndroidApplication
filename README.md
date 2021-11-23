@@ -53,4 +53,10 @@ Connexion en trois langues:
 
 <img src="Images/ang.png" width="250" style="margin-left: 50px">  <img src="Images/fr.png" width="250" style="margin-left: 50px"> <img src="Images/ar.png" width="250" style="margin-left: 50px">
 
+Autres:
+
+
+<img src="Images/cqr.png" width="250" style="margin-left: 50px">  <img src="Images/abs.png" width="250" style="margin-left: 50px"> <img src="Images/rmp.png" width="250" style="margin-left: 50px"> <img src="Images/hl.png" width="250" style="margin-left: 50px">
+
+
 
